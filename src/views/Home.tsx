@@ -22,9 +22,6 @@ export const Home = () => {
 				<Offers />
 				<PartnersSubscriptions />
 				<PromoAdds />
-				{/* <Discovery />
-				<Stores />
-				<InterestOffers /> */}
 				<Category />
 			</div>
 		</div>

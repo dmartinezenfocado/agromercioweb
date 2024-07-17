@@ -113,10 +113,6 @@ export const Category = () => {
 		}
 	]
 
-	console.log('categories')
-
-	console.log(categories)
-
 	// const dispatch = useAppDispatch()
 	// const { isLoading, data } = useGetCategoriesQuery()
 
