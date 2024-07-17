@@ -59,7 +59,7 @@ const SellProduct: React.FC = () => {
 				{/* Categoría */}
 				<div className="mb-4">
 					<label htmlFor="category" className="block text-sm font-medium text-gray-700">Categoría</label>
-					<select id="category" name="category" value={formData.category} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+					<select id="category" name="category" value={formData.category} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
 						<option value="">Seleccionar Categoría</option>
 						{categories.map((category, index) => (
 							<option key={index} value={category}>{category}</option>
@@ -70,27 +70,27 @@ const SellProduct: React.FC = () => {
 				{/* Nombre del Producto */}
 				<div className="mb-4">
 					<label htmlFor="productName" className="block text-sm font-medium text-gray-700">Nombre del Producto</label>
-					<input type="text" id="productName" name="productName" value={formData.productName} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
+					<input type="text" id="productName" name="productName" value={formData.productName} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" />
 				</div>
 
 				{/* Precio */}
 				<div className="mb-4">
 					<label htmlFor="price" className="block text-sm font-medium text-gray-700">Precio</label>
-					<input type="number" id="price" name="price" value={formData.price} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
+					<input type="number" id="price" name="price" value={formData.price} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" />
 				</div>
 
 				{/* Descripción */}
 				<div className="mb-4">
 					<label htmlFor="description" className="block text-sm font-medium text-gray-700">Descripción</label>
-					<textarea id="description" name="description" value={formData.description} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" rows={4} />
+					<textarea id="description" name="description" value={formData.description} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" rows={4} />
 				</div>
 
 				{/* Cantidad Producida */}
 				<div className="mb-4">
 					<label htmlFor="quantity" className="block text-sm font-medium text-gray-700">Cantidad Producida</label>
 					<div className="flex">
-						<input type="number" id="quantity" name="quantity" value={formData.quantity} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-l-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
-						<select id="quantityUnit" name="quantityUnit" value={formData.quantityUnit} onChange={handleChange} className="mt-1 block w-1/3 py-2 px-3 border border-gray-300 rounded-r-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+						<input type="number" id="quantity" name="quantity" value={formData.quantity} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-l-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" />
+						<select id="quantityUnit" name="quantityUnit" value={formData.quantityUnit} onChange={handleChange} className="mt-1 block w-1/3 py-2 px-3 border border-gray-300 rounded-r-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
 							{quantityUnits.map((unit, index) => (
 								<option key={index} value={unit}>{unit}</option>
 							))}
@@ -102,8 +102,8 @@ const SellProduct: React.FC = () => {
 				<div className="mb-4">
 					<label htmlFor="frequency" className="block text-sm font-medium text-gray-700">Frecuencia</label>
 					<div className="flex">
-						<input type="number" id="frequency" name="frequency" value={formData.frequency} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-l-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
-						<select id="frequencyUnit" name="frequencyUnit" value={formData.frequencyUnit} onChange={handleChange} className="mt-1 block w-1/3 py-2 px-3 border border-gray-300 rounded-r-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+						<input type="number" id="frequency" name="frequency" value={formData.frequency} onChange={handleChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-l-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" />
+						<select id="frequencyUnit" name="frequencyUnit" value={formData.frequencyUnit} onChange={handleChange} className="mt-1 block w-1/3 py-2 px-3 border border-gray-300 rounded-r-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
 							{frequencyUnits.map((unit, index) => (
 								<option key={index} value={unit}>{unit}</option>
 							))}
@@ -126,7 +126,7 @@ const SellProduct: React.FC = () => {
 							<div className="flex text-sm text-gray-600">
 								<label
 									htmlFor="file-upload"
-									className="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500"
+									className="relative cursor-pointer bg-white rounded-md font-medium text-green-600 hover:text-green-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-green-500"
 								>
 									<span>Subir un archivo</span>
 									<input id="file-upload" name="images" type="file" multiple className="sr-only" onChange={handleFileChange} />
@@ -159,7 +159,7 @@ const SellProduct: React.FC = () => {
 
 				{/* Botón de Guardar */}
 				<div className="mb-4">
-					<button type="submit" className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+					<button type="submit" className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
             Guardar
 					</button>
 				</div>
