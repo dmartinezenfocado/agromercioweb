@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'main-brown': '#e1c766',
+				'main-brown': '#FAF5E9',
 				'brown-meli': '#303126',
 				'gray-meli': '#333',
 				'background-meli': '#ebebeb'

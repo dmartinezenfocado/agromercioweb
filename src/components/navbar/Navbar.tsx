@@ -93,13 +93,13 @@ export const Navbar = () => {
 							<li>Ofertas</li>
 							<li>Historial</li>
 							<li>Novedades</li>
-							<li>Vender</li>
+							<li onClick={() => navigate('/sell')} className="cursor-pointer">Vender</li>
 							<li>Ayuda</li>
 						</ul>
 
 						<ul className="nav-user-categories flex gap-5 items-end text-xs text-tiny">
-						    <li>Acceder</li>
-							<li>Crear cuenta</li>
+						    <li onClick={() => navigate('/login')} className="cursor-pointer">Acceder</li>
+							<li onClick={() => navigate('/register')} className="cursor-pointer">Crear cuenta</li>
 							<li>Compras</li>
 							<li onClick={() => navigate('/cart')} className="cursor-pointer">
 								<AiOutlineShoppingCart size={'2em'} color="#303126" />

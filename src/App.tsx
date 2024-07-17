@@ -4,6 +4,10 @@ import { Home } from './views/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Search } from './views/Search'
 import { Product } from './views/Product'
+import Register from './views/Register'
+import Login from './views/Login'
+import LoanRequest from './views/LoanRequest'
+import SellProduct from './views/SellProduct'
 
 import Modal from 'react-modal'
 import { Cart } from './views/Cart'
@@ -28,10 +32,14 @@ function App () {
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<Home />}/>
+				<Route path='/register' element={<Register />}/>
+				<Route path='/login' element={<Login />}/>
 				<Route path='/search/:product' element={<Search />}/>
 				<Route path='/:product' element={<Product />}/>
 				<Route path='/cart' element={<Cart/>}/>
 				<Route path='/checkout/cart' element={<Checkout />}/>
+				<Route path='/loan' element={<LoanRequest />}/>
+				<Route path='/sell' element={<SellProduct />}/>
 			</Routes>
 			<Modals />
 		</BrowserRouter>

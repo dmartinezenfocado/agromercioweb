@@ -11,7 +11,7 @@ export const PaymentMethods = () => {
 					</div>
 					<div className='flex flex-col items-start'>
 						<span className='text-md'>Préstamos</span>
-						<a href='https://bancoagricola.gob.do/productos/prestamos-solicitud/' target="_blank" rel="noreferrer"><span className='text-xs text-blue-500 hover:underline'>Solicita, invierte y crece</span></a>
+						<a href='/loan' rel="noreferrer"><span className='text-xs text-blue-500 hover:underline'>Solicita, invierte y crece</span></a>
 					</div>
 				</div>
 				{/* Ahorros */}
