@@ -13,7 +13,7 @@ export const selectedProduct = {
 	pictures: [
 		{
 			id: 'MLA1374791257',
-			size: 960,
+			size: '960',
 			url: 'https://enfoco.com.do/test/apps/platanospower.png',
 			secure_url: 'https://enfoco.com.do/test/apps/platanospower.png'
 		}

@@ -93,6 +93,7 @@ export const Navbar = () => {
 							<li>Ofertas</li>
 							<li>Historial</li>
 							<li onClick={() => navigate('/news')} className="cursor-pointer">Novedades</li>
+							<li onClick={() => navigate('/courses')} className="cursor-pointer">Capacitación</li>
 							<li onClick={() => navigate('/sell')} className="cursor-pointer">Vender</li>
 							<li>Ayuda</li>
 						</ul>

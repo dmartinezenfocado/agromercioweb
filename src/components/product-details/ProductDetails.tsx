@@ -70,7 +70,8 @@ export const ProductDetails = () => {
 
 							<div className="w-[410px] max-h-[500px]">
 								<figure className='flex text-center justify-center pl-5 mt-6 h-full items-center'>
-									<ReactImageMagnify {...imageProps} className="mr-5 h-full"/>
+									<img src={imageProps.largeImage.src} className="mr-5 h-full" />
+									{/* <ReactImageMagnify {...imageProps} className="mr-5 h-full"/> */}
 								</figure>
 							</div>
 						</div>

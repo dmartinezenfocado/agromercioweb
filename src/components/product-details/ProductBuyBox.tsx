@@ -5,21 +5,24 @@ import { HiOutlineShieldCheck } from 'react-icons/hi'
 // import { useAppSelector } from '../../hooks/reduxHooks'
 import { AiOutlineTrophy } from 'react-icons/ai'
 import { IoMdRibbon } from 'react-icons/io'
-import { useCart } from '../../hooks/useCart'
-import { Product } from '../../slices/cartSlice'
+// import { useCart } from '../../hooks/useCart'
+// import { Product } from '../../slices/cartSlice'
 import { selectedProduct } from '../../utils/mock'
+import { useNavigate } from 'react-router-dom'
 
 export const ProductBuyBox = () => {
-	const { addToCart, clearAddedMessage } = useCart()
+	// const { addToCart, clearAddedMessage } = useCart()
+
+	const navigate = useNavigate()
 
 	// const { selectedProduct } = useAppSelector<any>(state => state.searchProducts)
 
-	const handleAddToCart = (product: Product) => {
-		addToCart(product)
-		setTimeout(() => {
-			clearAddedMessage()
-		}, 3000)
-	}
+	// const handleAddToCart = (product: Product) => {
+	// 	addToCart(product)
+	// 	setTimeout(() => {
+	// 		clearAddedMessage()
+	// 	}, 3000)
+	// }
 
 	return (
 		<div className="w-80 h-[650px] border rounded-md px-4 py-6 font-open-sans flex flex-col gap-5">
@@ -71,7 +74,8 @@ export const ProductBuyBox = () => {
 			</div>
 			<div className='flex w-full flex-col  gap-2'>
 				<button className='bg-green-500 hover:bg-green-600 transition-colors ease-in py-3 rounded-md text-white font-medium text-sm'>Comprar Ahora</button>
-				<button onClick={() => handleAddToCart({ id: selectedProduct.id, title: selectedProduct.title, picture: selectedProduct.pictures[0].url, price: selectedProduct.price, updatedPrice: selectedProduct.price, quantity: 1 })} className='bg-green-100 hover:bg-opacity-70 transition-colors ease-in py-3 rounded-md text-green-500 font-medium text-sm'>Agregar al carrito</button>
+				<button onClick={() => navigate('/profile')} className='bg-green-100 hover:bg-opacity-70 transition-colors ease-in py-3 rounded-md text-green-500 font-medium text-sm'>Ver perfil</button>
+				{/* <button onClick={() => handleAddToCart({ id: selectedProduct.id, title: selectedProduct.title, picture: selectedProduct.pictures[0].url, price: selectedProduct.price, updatedPrice: selectedProduct.price, quantity: 1 })} className='bg-green-100 hover:bg-opacity-70 transition-colors ease-in py-3 rounded-md text-green-500 font-medium text-sm'>Agregar al carrito</button> */}
 			</div>
 
 			<div className='details text-[14px] text-gray-400 flex flex-col justify-start gap-3'>

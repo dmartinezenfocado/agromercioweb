@@ -10,6 +10,8 @@ import Login from './views/Login'
 import LoanRequest from './views/LoanRequest'
 import SellProduct from './views/SellProduct'
 import News from './views/News'
+import Courses from './views/Courses'
+import SellerProfile from './views/SellerProfile'
 import Modal from 'react-modal'
 import { Cart } from './views/Cart'
 import { useEffect } from 'react'
@@ -42,6 +44,8 @@ function App () {
 				<Route path='/loan' element={<LoanRequest />}/>
 				<Route path='/sell' element={<SellProduct />}/>
 				<Route path='/news' element={<News />}/>
+				<Route path='/courses' element={<Courses />}/>
+				<Route path='/profile' element={<SellerProfile />}/>
 			</Routes>
 			<Modals />
 			<Footer />
