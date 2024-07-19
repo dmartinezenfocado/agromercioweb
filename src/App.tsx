@@ -1,5 +1,6 @@
 import './App.css'
 import { Navbar } from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 import { Home } from './views/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Search } from './views/Search'
@@ -8,7 +9,7 @@ import Register from './views/Register'
 import Login from './views/Login'
 import LoanRequest from './views/LoanRequest'
 import SellProduct from './views/SellProduct'
-
+import News from './views/News'
 import Modal from 'react-modal'
 import { Cart } from './views/Cart'
 import { useEffect } from 'react'
@@ -40,8 +41,10 @@ function App () {
 				<Route path='/checkout/cart' element={<Checkout />}/>
 				<Route path='/loan' element={<LoanRequest />}/>
 				<Route path='/sell' element={<SellProduct />}/>
+				<Route path='/news' element={<News />}/>
 			</Routes>
 			<Modals />
+			<Footer />
 		</BrowserRouter>
 	)
 }
