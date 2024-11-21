@@ -16,8 +16,8 @@ const ProfileInfo: React.FC = () => {
 	}
 
 	return (
-		<div className="container mx-auto py-6">
-			<div className="bg-white rounded-lg shadow-md p-6">
+		<div className="flex items-center justify-center min-h-screen bg-gray-100">
+			<div className="bg-white rounded-lg shadow-md p-6 w-full max-w-lg">
 				<div className="flex items-center mb-6">
 					<img className="w-24 h-24 rounded-full mr-4" src="https://enfoco.com.do/test/apps/juan.png" alt={sellerData.name} />
 					<div>
@@ -28,12 +28,12 @@ const ProfileInfo: React.FC = () => {
 					</div>
 				</div>
 				<div>
-					<h3 className="text-xl font-bold mb-4">Insignias de Cursos Completados</h3>
-					<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-						{sellerData.badges.map((badge, index) => (
-							<Badge key={index} title={badge.title} imageUrl={badge.imageUrl} />
-						))}
-					</div>
+					<h3 className="text-xl font-bold mb-4 text-center">Insignias de Cursos Completados</h3>
+					<img
+						src="https://enfoco.com.do/test/apps/insignias.png"
+						alt="Insignias de Cursos"
+						className="w-full h-auto rounded-lg shadow-lg mb-4"
+					/>
 				</div>
 			</div>
 		</div>
